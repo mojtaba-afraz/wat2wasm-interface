@@ -1,0 +1,17 @@
+{
+  "name": "wat2wasm-interface",
+  "version": "1.0.0",
+  "description": "A simple shortcut to convert wat files to files on your system using node.js",
+  "main": "build.js",
+  "scripts": {
+    "WA": "mkdir out & wat2wasm webAssembly/%npm_config_name%.wat -o out/%npm_config_name%.wasm",
+    "build": "node build.js"
+  },
+  "keywords": ["wat2wasm","webAssembly"],
+  "author": "Mojtaba Afraz",
+  "type": "commonjs",
+  "license": "MIT",
+  "dependencies": {
+    "wat2wasm": "^3.0.0"
+  }
+}
