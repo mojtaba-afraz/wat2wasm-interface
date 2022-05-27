@@ -20,3 +20,4 @@ Simply write and save your .wat files in the webAssembly folder and run the foll
 ```console
 $ npm run build
 ```
+And then the output of your code is created in the out folder
