@@ -2,7 +2,7 @@ const fs = require('fs')
 const exec = require('child_process').exec;
 const dir = './webAssembly'
 const files = fs.readdirSync(dir)
-let fileNames = []
+const fileNames = []
 for (const file of files) {
   fileNames.push(file.split('.')[0])
 }
@@ -14,6 +14,6 @@ for(file in fileNames){
         }
 });
     if(compiledFile){
-        console.log('\x1b[36m', `${fileNames[file]}.wasm : Compelet !` ,'\x1b[0m')
+        console.log('\x1b[36m', `${fileNames[file]}.wasm : completed !` ,'\x1b[0m')
     }
 }
